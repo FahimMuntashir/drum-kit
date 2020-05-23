@@ -5,7 +5,9 @@ for(var i=0;i<numOfButtons;i++){
   document.querySelectorAll(".drum")[i].addEventListener("click", handClick);
 
   function handClick(){
-    alert("I got clicked");
+
+    var audio = new Audio("sounds/tom-1.mp3");
+    audio.play();                                                                                                                                                                                   
   }
 
 }

@@ -8,14 +8,14 @@ for (var i = 0; i < numOfButtons; i++) {
     var buttonInnerHtml = this.innerHTML;
 
     makeSound(buttonInnerHtml);
+    buttonAnimation(buttonInnerHtml);
   }
 
 }
 
-
-
 document.addEventListener("keypress", function(event){
   makeSound(event.key);
+  buttonAnimation(event.key);
 });
 
 
@@ -65,6 +65,9 @@ function makeSound(key){
 
   }
 
+}
 
+
+function buttonAnimation(currentKey){
 
 }
